@@ -1,0 +1,42 @@
+
+/*body{
+    background-image: url("../images/1.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}*/
+#div1{
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+    border-radius: 100px;
+}
+#head{
+    background-color: #d4c8ce;
+    padding-top: 35px;
+    width: 400px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    border: solid 3px black;
+    border-bottom: hidden;
+}
+#body{
+    background-color: #c9bfe6;
+    width: 400px;
+    text-align: center;
+    font-size: 50px;
+    border-left:solid 3px #ffffff;
+}
+#fooder{
+    background-color: #eedede;
+    border-radius: 0px 0px 15px 15px;
+    width: 400px;
+    text-align: center;
+    padding-bottom: 35px;
+    border: solid 3px black;
+    border-top: hidden;
+}
+.hoder:hover{
+    border:1px solid #9d9dff;
+    border-radius: 2px;
+}

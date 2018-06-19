@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+  
+        <div id="messageApp">
+            <input type='button' v-bind:disabled = "isShowButton" value='Button Disabled' />
+            <input type='button' v-bind:disabled="!isShowButton" value='Button Enabled' />
+        </div>
+        <div id="app-3">
+            <span v-if="seen">Thoắt ẩn thoắt hiện</span>
+        </div>
+        <div id="app-4">
+            <ol v-if="seen">
+                <li v-for="todo in todos">
+                {{ todo }}
+                </li>
+            </ol>
+        </div>
+        <div id="app-5">
+            <p>{{ message }}</p>
+            <button v-on:click="reverseMessage">Reverse Message</button>
+        </div>
+        <div id="app-6">
+            <p>{{ message }}</p>
+            <input v-model="message">
+        </div>
+        <div id="app-7">
+            <p>Can mua</p>
+            <ol>
+                <todo-item 
+                v-for = "item in grocerylist"
+                v-bind:todo = "item"
+                v-bind="item.id"></todo-item>
+            </ol>
+        </div>
+    
+    <script language="javascript">
+        Vue.component("todo-item" , {
+            props:['todo'],
+            template: '<li>{{todo.text}}</li>'
+        })
+        var app7 = new Vue({
+            el:"#app-7",
+            data: {
+                grocerylist:[
+                    {id: 0,text: "ca phao"},
+                    {id: 1,text: "ca phao 1 "},
+                    {id: 2,text: "ca phao 2"}
+                ]
+            }
+        });
+        var app6 = new Vue({
+            el: '#app-6',
+            data: {
+                 message: 'Your Name please !'
+            }
+        });
+        var app5 = new Vue({
+            el: '#app-5',
+            data: {
+                message: 'qua lại khách chờ sông lặng sóng'
+            },
+            methods: {
+                reverseMessage: function () {
+                this.message = this.message.split(' ').reverse().join(' ')
+                }
+            }
+        });
+        var app4 = new Vue({
+            el: '#app-4',
+            data: {
+                todos: [
+                    'Học JavaScript',
+                    'Học Vue' ,
+                    'Xây dựng cái gì đó hay ho'
+                ],
+                seen: true
+            }
+        });
+        var messageApp = new Vue({
+            el : "#messageApp",
+            data : {
+                isShowButton : false
+            }
+        });
+        var app3 = new Vue({
+            el: "#app-3",
+            data: {
+                seen: true
+            }
+        });
+        
+   </script>
+    
+    <script src="../vuejs/v1.js"></script>
+</body>
+</html>
