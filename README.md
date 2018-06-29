@@ -1,3 +1,2 @@
-# Mine
-Learning an 
-practice 
+Nothing to read haha
+
