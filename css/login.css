@@ -17,7 +17,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
-    padding: 70px 20px;
+    padding: 70px 20px 0px 20px;
 }
 .avatar{
     width: 100px;
@@ -58,29 +58,30 @@ form{
 .btnsubmit:hover{
     background: #408d32;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
 #others p{
+    margin-top: 20px; 
+    position: relative;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
 }
-#others input{
-    background-color: transparent;  
-    margin-top: 30px;
-    border:none;
-    outline:none;
+#others a{   
+    display: inline-block;
+    margin-top: 25px;
     height: 35px;
-    width: 120px; 
-    color: #ff5151;
-}
-#others input:hover{
-    color: palevioletred;
-    border: 1px solid white;
+    width: 120px;
+    background-color: transparent;
+    border: 1px solid transparent;
     border-radius: 20px;
+    text-align: center;
+    text-decoration: none;           
+    color: rgb(244, 12, 62);
+    vertical-align:middle;
+    line-height: 35px;
+}
+#others a:hover{
+    border: 1px solid white;
+    background-color:#695f64;
 }
 .forget{
-    position: relative;
-    right: 0px;
+    float: right;
 }
