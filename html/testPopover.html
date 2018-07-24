@@ -16,11 +16,50 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/testPopover.css">
 </head>
 
 <body>
-    <img class="btn " src="../images/1.jpg" alt="" data-toggle="popover" title="hello" data-content="safsa">
+   <img class="userIcon" src="../images/1.jpg" alt="ada" data-toggle="popover">
+    <div id="popover-content" class="d-none">
+        <ul class="list-group">
+            <li class="list-group-item inf">
+                <form class="form-inline" role="form">
+                    <div class="form-group" action="https://www.google.com.vn/search?q=bootstrap+button&oq=bootstrap+button&aqs=chrome..69i57j69i60j0l4.10015j0j4&sourceid=chrome&ie=UTF-8">
+                        <div id="imgUser">
+                            <img id="imageUser" src="../images/1.jpg" alt="no  image">
+                        </div>
+                        <div id="inf">
+                            <h6 id="name">Đoàn Văn Toàn</h6>
+                            <p id="email">emxiho@gmail.com</p>
+                            
+                            <a type = "button" class="btn btn-danger btn-md" href='https://www.rapidtables.com/web/html/link/html-button-link.html'>Đăng xuất</a>
+                        </div>
+                    </div>
+                </form>
+            </li>
+            <li class="list-group-item">
+                <button id="accSetting">
+                    Thiết lập tài khoản
+                </button>
+            </li>
+            <li class="list-group-item sv">
+                smcc.vn
+            </li>
+        </ul>
+    </div>
 </body>
+<script>
+    $(".userIcon").popover({
+        html: true,
+        container: "body",
+        placement: "bottom",
+        content: function() {
+            return $('#popover-content').html();
+        }
+    });
+
+</script>
 
 </html>
