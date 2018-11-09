@@ -6,19 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>test popover</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
+    <!--CDN for  jQuery librarys and fontAwesome -->
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script src="../js/cloudTag.js"></script> 
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/testTagCloudcavas.css">
+    
+    <link rel="stylesheet"  href="../css/testTagCloudcavas.css">
+    <script>
+        $(document).ready(function(){
+            $('.tagBall').cloudTag({
+                ballSize:100 // the size of the tag cloud ball
+            });
+        });
+    </script>
 </head>
 <body>
-    <i class="fa fa-cog fa-spin"></i>
+    <i class="fa fa-cog fa-spin fa-2x"></i>
+    <div class="tagBall" >
+        <a target="_blank" class="tag" href="search?q=that girl" >that girl</a>
+        <a target="_blank" class="tag" href="search?q=C, G, Am, Em, F" >C, G, Am, Em, F</a>
+        <a target="_blank" class="tag" href="search?q=reality" >reality</a>
+        <a target="_blank" class="tag" href="search?q=Am, F, C, G" >Am, F, C, G</a>
+        <a target="_blank" class="tag" href="search?q=1 phút" >1 phút</a>
+        <a target="_blank" class="tag" href="search?q=duyên mình lỡ" >duyên mình lỡ</a>
+        <a target="_blank" class="tag" href="search?q=rời bỏ" >rời bỏ</a>
+        <a target="_blank" class="tag" href="search?q=c, g, am, em, f" >c, g, am, em, f</a>
+        <a target="_blank" class="tag" href="search?q=lạ lùng" >lạ lùng</a>
+        <a target="_blank" class="tag" href="search?q=am, f, c, g" >am, f, c, g</a>
+        <a target="_blank" class="tag" href="search?q=đừng quên tên anh" >đừng quên tên anh</a>
+        <a target="_blank" class="tag" href="search?q=sao cũng được" >sao cũng được</a>
+        <a target="_blank" class="tag" href="search?q=chưa bao giờ" >chưa bao giờ</a>
+        <a target="_blank" class="tag" href="search?q=em gái mưa" >em gái mưa</a>
+        <a target="_blank" class="tag" href="search?q=em dạo này" >em dạo này</a>
+        <a target="_blank" class="tag" href="search?q=chiều hôm ấy" >chiều hôm ấy</a>
+        <a target="_blank" class="tag" href="search?q=bùa yêu" >bùa yêu</a>
+        <a target="_blank" class="tag" href="search?q=một nhà" >một nhà</a>
+        <a target="_blank" class="tag" href="search?q=yêu rồi" >yêu rồi</a>
+        <a target="_blank" class="tag" href="search?q=đừng như thói quen">đừng như thói quen</a>
+    </div>
 </body>
 </html>
