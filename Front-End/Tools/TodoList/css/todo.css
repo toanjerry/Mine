@@ -1,0 +1,44 @@
+body{
+    background-color: silver;
+
+}
+#todoapp{
+    background: #fff;
+    margin:0 auto;
+    max-width: 35em;
+    min-width: 20em;
+    min-height: 15em;
+}
+#header{
+    position:relative;
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+    color: blueviolet;
+}
+#todolist{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    max-height: 27.5em;
+    width: 100%;
+    overflow: auto;
+}
+.todo{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    height: 3.5em;
+}
+input[type="checkbox"]{
+    display:none;
+}
+.todo{
+    margin: 0;
+    padding: 0;
+}
+label,input{
+  
+
